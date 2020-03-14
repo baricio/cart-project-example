@@ -1,0 +1,19 @@
+{
+  "name": "kartman",
+  "version": "1.0.0",
+  "description": "Example project for shoping",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "crud",
+    "node",
+    "project"
+  ],
+  "author": "baricio@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.2"
+  }
+}
