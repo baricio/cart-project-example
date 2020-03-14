@@ -4,6 +4,8 @@
   "description": "Example project for shoping",
   "main": "index.js",
   "scripts": {
+    "seeder": "node ./seed/seeder.js",
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -14,6 +16,8 @@
   "author": "baricio@gmail.com",
   "license": "ISC",
   "dependencies": {
-    "axios": "^0.19.2"
+    "axios": "^0.19.2",
+    "express": "^4.17.1",
+    "mongodb": "^3.5.5"
   }
 }

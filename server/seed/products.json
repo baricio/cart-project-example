@@ -1,0 +1,77 @@
+{
+    "total": 5,
+    "limit": 10,
+    "skip": 0,
+    "data": [
+        {
+            "_id": "3bcdd547-388c-4d6d-848c-a17b1414fe9c",
+            "name": "Bicycle, grey",
+            "image": {
+                "orig": "https://images.unsplash.com/photo-1485965120184-e220f721d03e?ixlib=rb-1.2.1&auto=format&fit=crop&w=640&q=80",
+                "thumb": "https://images.unsplash.com/photo-1485965120184-e220f721d03e?ixlib=rb-1.2.1&auto=format&fit=crop&w=480&h=480&q=80"
+            },
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "stock": 2,
+            "price": {
+                "currency": "EUR",
+                "value": 49900
+            }
+        },
+        {
+            "_id": "1f85ec65-c1f2-4adc-89e1-192637aaef6e",
+            "name": "Flashlight, Halogen, red",
+            "image": {
+                "orig": "https://images.unsplash.com/photo-1561916960-dea3b9b0355a?ixlib=rb-1.2.1&auto=format&fit=crop&w=640&q=80",
+                "thumb": "https://images.unsplash.com/photo-1561916960-dea3b9b0355a?ixlib=rb-1.2.1&auto=format&fit=crop&w=480&h=480&q=80"
+            },
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "stock": 100,
+            "price": {
+                "currency": "EUR",
+                "value": 2995
+            }
+        },
+        {
+            "_id": "3abe9d19-c7e0-4bd6-9e05-ea866b1cebbf",
+            "name": "Ladies coat, taupe",
+            "image": {
+                "orig": "https://images.unsplash.com/flagged/photo-1557403022-a679b2925052?ixlib=rb-1.2.1&auto=format&fit=crop&w=640&q=80",
+                "thumb": "https://images.unsplash.com/flagged/photo-1557403022-a679b2925052?ixlib=rb-1.2.1&auto=format&fit=crop&w=480&h=480&q=80"
+            },
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "stock": 42,
+            "price": {
+                "currency": "EUR",
+                "value": 6900
+            }
+        },
+        {
+            "_id": "2f31cdcc-80d3-49a0-8f77-2009b70b8664",
+            "name": "Motorcycle helmet, with print",
+            "image": {
+                "orig": "https://images.unsplash.com/photo-1551281306-0d52288970ad?ixlib=rb-1.2.1&auto=format&fit=crop&w=640&q=80",
+                "thumb": "https://images.unsplash.com/photo-1551281306-0d52288970ad?ixlib=rb-1.2.1&auto=format&fit=crop&w=480&h=480&q=80"
+            },
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "stock": 42,
+            "price": {
+                "currency": "EUR",
+                "value": 6900
+            }
+        },
+        {
+            "_id": "cceaf21e-0343-4473-8c08-d14e186de484",
+            "name": "Book, different titles",
+            "image": {
+                "orig": "https://images.unsplash.com/photo-1519682337058-a94d519337bc?ixlib=rb-1.2.1&auto=format&fit=crop&w=640&q=80",
+                "thumb": "https://images.unsplash.com/photo-1519682337058-a94d519337bc?ixlib=rb-1.2.1&auto=format&fit=crop&w=480&h=480&q=80"
+            },
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "stock": 999,
+            "price": {
+                "currency": "EUR",
+                "value": 499
+            }
+        }
+    ]
+}
