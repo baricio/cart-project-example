@@ -1,0 +1,117 @@
+body {
+    margin: 0 auto;
+    padding: 0;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+    opacity: 1
+}
+
+#app {
+    margin: 0 auto;
+    padding: 0;
+}
+
+.header {
+    color: aliceblue;
+    display: flex;
+    background-color: rgba(46, 134, 171, 1);
+    height: 5em;
+    justify-content: flex-start;
+    padding: 0.5em;
+}
+
+.header .header-logocontent {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    padding: 0 0 0 2em;
+}
+
+.header .header-logoimage {
+    background-image: url('/logo.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 50px;
+    width: 120px;
+}
+
+.header .header-center {
+    justify-content: center;
+    display: flex;
+    flex: 1;
+    align-items: center;
+}
+
+.header .header-cart {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.header .header-cartimage {
+    background-image: url('/cart.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 50px;
+    width: 120px;
+    cursor: pointer;
+}
+
+.header .header-cart-count {
+    right: 17px;
+    padding: 5px 10px;
+    border-radius: 50%;
+    background: red;
+    color: white;
+    position: absolute;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.products .products-item{
+    width: 35em;
+    border: 1px solid red;
+    margin: 0.5em;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.products .products-item .title{
+    text-align: center;
+}
+
+.products .products-item .thumbs{
+    width: 15em;
+}
+
+.products .products-action{
+    display: flex;
+}
+
+.products .products-action *{
+    margin: 0.5em;
+}
+
+.toast {
+    min-width: 250px; /* Set a default minimum width */
+    margin-left: -125px; /* Divide value of min-width by 2 */
+    background-color: #333; /* Black background color */
+    color: #fff; /* White text color */
+    text-align: center; /* Centered text */
+    border-radius: 2px; /* Rounded borders */
+    padding: 16px; /* Padding */
+    position: fixed; /* Sit on top of the screen */
+    z-index: 1; /* Add a z-index if needed */
+    left: 50%; /* Center the snackbar */
+    top: 30px; /* 30px from the bottom */
+    opacity: 90%;
+}
