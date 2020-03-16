@@ -9,10 +9,11 @@ const state = {
     cartProducts: (state, getters, rootState) => {
       return state.items.map(({ _id, quantity }) => {
         const product = rootState.products.all.find(product => product._id === _id)
-        console.log('cart-product', product)
         return {
+          product_id: _id,
           title: product.name,
           price: product.price.value,
+          currency: product.price.currency,
           quantity
         }
       })
@@ -38,9 +39,9 @@ const state = {
       if (product.stock > 0) {
         const cartItem = state.items.find(item => item._id === product._id)
         if (!cartItem) {
-          commit('pushProductToCart', { _id: product._id })
+          commit('pushProductToCart', { _id: product._id, quantity: product.quantity })
         } else {
-          commit('incrementItemQuantity', cartItem)
+          commit('incrementItemQuantity', cartItem, {_id: product._id, quantity: product.quantity })
         }
         // remove 1 item from stock
         commit('products/decrementProductInventory', { _id: product.id }, { root: true })
@@ -50,16 +51,16 @@ const state = {
   
   // mutations
   const mutations = {
-    pushProductToCart (state, { _id }) {
+    pushProductToCart (state, { _id, quantity }) {
       state.items.push({
         _id,
-        quantity: 1
+        quantity: parseInt(quantity)
       })
     },
   
-    incrementItemQuantity (state, { _id }) {
+    incrementItemQuantity (state, { _id, quantity }) {
       const cartItem = state.items.find(item => item._id === _id)
-      cartItem.quantity++
+      cartItem.quantity += parseInt(quantity)
     },
   
     setCartItems (state, { items }) {

@@ -1,13 +1,17 @@
 var {connection} = require('../database/connection')
 var products = require('./products.json')
 
-let seeder = async() => {
+let seeder = async () => {
     let client = await connection();
     console.log('created database Shopping');
 
     let db = client.db('Shopping')
     
-    await db.collection('products').drop();
+    try {
+        await db.collection('products').drop();
+    } catch (error) {
+        console.log('fail to drop')
+    }
     await db.createCollection('products');
     console.log('created products collection');
 

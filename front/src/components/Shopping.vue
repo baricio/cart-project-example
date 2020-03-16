@@ -1,6 +1,5 @@
 <template>
   <div class="shopping">
-    <ShoppingHeader></ShoppingHeader>
     <div class="products">
       <div class="products-item" v-for="product in productItems" v-bind:key="product._id">
         <h2 class="title">{{product.name}}</h2>
@@ -19,7 +18,6 @@
 
 <script>
 
-import ShoppingHeader from './ShoppingHeader.vue';
 import { mapState, mapActions } from 'vuex'
 import currencyFormatter from 'currency-formatter';
 
@@ -34,9 +32,6 @@ export default {
         quantity: 0
       }
     }
-  },
-  components: {
-    ShoppingHeader
   },
   computed: mapState({
     productItems: state => state.products.all

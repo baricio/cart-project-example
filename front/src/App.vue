@@ -1,14 +1,18 @@
 <template>
   <div id="app">
-    <!--img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/-->
+    <ShoppingHeader></ShoppingHeader>
     <router-view></router-view>
   </div>
 </template>
 
 <script>
 
+import ShoppingHeader from './components/ShoppingHeader';
+
 export default {
-  name: 'App'
+  name: 'App',
+  components: {
+    ShoppingHeader
+  },
 }
 </script>

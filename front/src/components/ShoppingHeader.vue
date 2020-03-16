@@ -6,7 +6,7 @@
         <div class="header-center">
           <p>Best Shopping for you</p>
         </div>
-        <div class="header-cart">
+        <div class="header-cart" @click="goToCart()">
           <div class="header-cartimage"></div>
           <div class="header-cart-count">{{total}}</div>
         </div>
@@ -21,11 +21,19 @@ export default {
   name: 'ShoppingHeader',
   computed: mapState({
     total: (state) => {
-      console.log('mycart',state.cart.items)
       return state.cart.items.reduce((total, product) => {
         return total + product.quantity;
       }, 0);
     }
   }),
+  methods: {
+    goToCart: function() {
+       this.$router.push(
+        {
+          path: '/cart',
+        }
+     )
+    }
+  },
 }
 </script>
