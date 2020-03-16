@@ -2,8 +2,8 @@
   <div class="shopping">
     <div class="products">
       <div class="products-item" v-for="product in productItems" v-bind:key="product._id">
-        <h2 class="title">{{product.name}}</h2>
         <img class="thumbs" :src="product.image.thumb" alt="">
+        <h2 class="title">{{product.name}}</h2>
         <p>Price: {{moneyFormat(product.price.value, product.price.value.currency)}}</p>
         <p>Stock: {{product.stock}}</p>
         <div class="products-action">

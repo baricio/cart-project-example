@@ -78,11 +78,12 @@ input[type=number]::-webkit-inner-spin-button {
 
 .products .products-item{
     width: 35em;
-    border: 1px solid red;
+    background: #f3f1ed;
     margin: 0.5em;
     display: flex;
     align-items: center;
     flex-direction: column;
+    padding: 1em;
 }
 
 .products .products-item .title{
